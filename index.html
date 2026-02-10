@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliyan Ali - CV</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #2980b9;
+            --text-color: #333;
+            --light-bg: #f4f6f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            background: white;
+            padding: 50px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            border-radius: 5px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: var(--secondary-color);
+            margin-top: 5px;
+            font-weight: 500;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 10px;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.2em;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        /* Content Styles */
+        .job-title {
+            font-weight: bold;
+            font-size: 1.05em;
+            color: #000;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .institution {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .date {
+            float: right;
+            font-size: 0.9em;
+            color: #666;
+            font-weight: normal;
+        }
+
+        ul {
+            margin: 5px 0 15px 20px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .skill-category {
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background-color: white;
+            }
+            .container {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+                max-width: 100%;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            /* Ensure links are visible in print if needed, or keep clean */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Aliyan Ali</h1>
+            <div class="subtitle">Electrical Engineering Student (Computer Engineering Specialization)</div>
+            <div class="contact-info">
+                Karachi, Pakistan | +92 331 3225784<br>
+                <a href="mailto:k224900@nu.edu.pk">k224900@nu.edu.pk</a> |
+                <a href="https://www.linkedin.com/in/aliyan-ali-a50910312/" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/Aloo0321" target="_blank">GitHub</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p>
+                Final-year Electrical Engineering student at FAST-NUCES specializing in Computer Engineering with a <strong>CGPA of 3.48</strong>. Passionate about the intersection of embedded systems, blockchain technology, and control automation. Proven track record in academic excellence with multiple Dean’s List awards and extensive Teaching Assistant experience. Seeking a challenging role in Power or Computer Engineering to leverage skills in microcontroller programming, full-stack development, and intelligent system design.
+            </p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="job-title">
+                    National University of Computer & Emerging Sciences (FAST-NUCES)
+                    <span class="date">Expected June 2026</span>
+                </div>
+                <div class="institution">Bachelor of Science in Electrical Engineering | Karachi, Pakistan</div>
+                <ul>
+                    <li><strong>CGPA:</strong> 3.48 / 4.00</li>
+                    <li><strong>Honors:</strong> Dean’s List Award recipient (Fall 2022, Fall 2023, Fall 2025).</li>
+                    <li><strong>Relevant Coursework:</strong> Computer Architecture, Microprocessor Interfacing, Embedded Systems, Data Structures & Algorithms (DSA), Operating Systems, Data Communication & Networks, Network Security & Blockchain, Feedback Control Systems.</li>
+                </ul>
+            </div>
+            
+            <div class="education-item">
+                <div class="job-title">
+                    Government Boys Degree Science/Commerce Johar College
+                    <span class="date">2020 – 2022</span>
+                </div>
+                <div class="institution">Intermediate (Pre-Engineering) | Karachi</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div><span class="skill-category">Programming:</span> C++, Python, Java, TypeScript, JavaScript (React/Node.js), SQL, Assembly (MIPS/AVR).</div>
+                <div><span class="skill-category">Hardware & Embedded:</span> Arduino, ESP32, FPGA, Verilog, PID Control, Logic Design, Circuit Analysis.</div>
+                <div><span class="skill-category">Tools & Frameworks:</span> VS Code, Proteus, MATLAB/Simulink, Git/GitHub, Web3.js, Solidity, CI/CD Pipelines.</div>
+                <div><span class="skill-category">Domains:</span> Embedded Systems, IoT, Blockchain Development, Computer Vision (CNN/LSTM), Power & Control Automation.</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            
+            <div class="project-item">
+                <div class="job-title">Web3 Play-to-Earn Crypto Ecosystem & Token</div>
+                <div class="institution">Tech Stack: TypeScript, Solidity, Web3.js, BNB Chain, CI/CD</div>
+                <ul>
+                    <li>Developed and deployed a custom cryptocurrency token on the <strong>BNB Smart Chain</strong> with a responsive airdrop website.</li>
+                    [cite_start]<li>Implemented <strong>CI/CD pipelines</strong> to automate testing and deployment of the platform[cite: 68].</li>
+                    <li>Engineered a full-stack "Play-to-Earn" gaming platform featuring browser-based games (Flappy Bird clone, Tile Fall) using NFTs as mining power boosters.</li>
+                    <li>Built real-time leaderboards and a responsive frontend to track user scores and token rewards.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="job-title">Hybrid CNN-LSTM Predictive Crop Yield Model</div>
+                <div class="institution">Tech Stack: Python, TensorFlow/Keras, Satellite Imaging API</div>
+                <ul>
+                    <li>Developed a hybrid <strong>CNN-LSTM deep learning model</strong> to predict wheat crop yields utilizing Sentinel-2 satellite imagery and NASA weather data.</li>
+                    <li>Achieved a model accuracy of <strong>97.9%</strong> by correlating spatial vegetation indices with temporal weather patterns.</li>
+                    <li>Automated the data pipeline to forecast harvest outcomes, directly supporting sustainable agriculture initiatives (SDG 2).</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="job-title">Autonomous Quadcopter Drone with PID Stabilization</div>
+                <div class="institution">Tech Stack: C++, Arduino, Python, F450 Frame</div>
+                <ul>
+                    <li>Constructed a quadcopter using the F450 airframe, integrating ESCs and brushless DC motors.</li>
+                    <li>Programmed a custom <strong>PID control algorithm</strong> on an Arduino microcontroller to manage flight stability, roll, pitch, and yaw in real-time.</li>
+                    <li>Implemented Python-based telemetry scripts to monitor sensor data and adjust control parameters dynamically.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="job-title">GUI Chess Game (OOP)</div>
+                <div class="institution">Tech Stack: Java, Swing/AWT, OOP Principles</div>
+                <ul>
+                    [cite_start]<li>Designed a fully functional Chess game utilizing complex Object-Oriented Programming (OOP) concepts[cite: 69, 70].</li>
+                    <li>Implemented a graphical user interface (GUI) for interactive gameplay and move validation logic.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="job-title">Banking Management System</div>
+                <div class="institution">Tech Stack: C++, File Handling</div>
+                <ul>
+                    [cite_start]<li>Developed a console-based banking system to manage user accounts, transactions, and secure record storage[cite: 71, 72].</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Leadership & Experience</h2>
+            
+            <div class="experience-item">
+                <div class="job-title">Teaching Assistant (FAST-NUCES)</div>
+                <ul>
+                    <li><strong>Applied Calculus</strong> (Fall 2025 & Fall 2023): Assisted 50+ students with complex calculus concepts, grading, and tutorials.</li>
+                    <li><strong>Information & Communication Technologies (ICT)</strong> (Fall 2024): Guided freshmen through programming logic (Python/C++) and lab tasks.</li>
+                    <li><strong>Differential Equations</strong> (Spring 2024): Facilitated coursework and grading for engineering mathematics.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Student Societies</div>
+                <ul>
+                    <li><strong>Treasurer, IEEE Student Branch</strong> (2024 – 2025): Managed financial accounts and budget allocation for technical workshops and events.</li>
+                    <li><strong>Coordinator, CBS Society</strong> (2023 – 2024): Organized university-wide events and coordinated with team members for smooth execution.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications & Achievements</h2>
+            <ul>
+                <li><strong>Dean’s List Awards:</strong> Awarded three times for exceptional academic performance (SGPA 3.78, 3.80, 3.53).</li>
+                [cite_start]<li><strong>2nd Position in Batch:</strong> Fall 2022[cite: 75].</li>
+                [cite_start]<li><strong>3rd Position in Batch:</strong> Fall 2023[cite: 77].</li>
+                [cite_start]<li><strong>Coders Cup 2023:</strong> Secured distinction in competitive programming[cite: 78].</li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>
